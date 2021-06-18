@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.recipe-wrapper{
+    display:flex;
+
+}
+.img{
+    width:50%;
+    height:700px;
+}
+
+.recipe{
+    width:50%;
+    height:700px;
+    margin:40px 75px 0 75px;
+}
+
+h2{
+    border-bottom:solid 1px #dedede;
+}
+
+dl{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+dt{
+    border-bottom:dotted 1px #ccc;
+    width:85%;
+    padding:6px 0;
+}
+
+dd{
+    border-bottom:dotted 1px #ccc;
+    width:15%;
+    padding:6px 0;
+}
+
+ul{
+    list-style-type:decimal;
+}
+
+li{
+    border-bottom:dotted 1px #ccc;
+    padding:6px 0 ;
+}
+
+.button{
+    text-decoration:none;
+    color:black;
+    border:solid 1px #2b2a27;
+    padding:18px 60px;
+
+}
+
+
+.back{
+    margin:0 auto 80px auto;
+    text-align:center;
+}
+footer{
+    padding:20px;
+}
+
+footer li{
+    display:inline-block;
+    
+}
+
+footer ul{
+    text-align:center;
+    padding-left:0px;
+
+}
+footer a{
+   font-size:12px;
+   list-style:none;
+    color:black;
+    padding:0 5px;
+}
+
+footer p{
+    text-align:center;
+    font-size:12px;
+}

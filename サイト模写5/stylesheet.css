@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+html{
+    width:100%;
+}
+
+body{
+    width:100%;
+}
+
+a:hover{
+    opacity:0.7;
+
+}
+
+
+
+.mainvisual{
+    width:100%;
+    height:100vh;
+    margin-bottom:80px;
+    position:relative;
+}
+
+.logo{
+position:absolute;
+top:5%;
+left:90%;
+}
+
+h2{
+    text-align:center;
+    font-weight:700;
+}
+
+.magazine-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 5%;
+}
+
+.magazine-wrapper p{
+    text-align:center;
+}
+
+.archive{
+    width:49%;
+    position:relative;
+}
+
+
+.archive-texts{
+    color:white;
+    font-weight:bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    max-width:290px;
+    margin:0 auto;
+    padding:15px 0;
+    top:40%;
+    left:0;
+    right:0;
+
+}
+
+.new{
+width:49%;
+position:relative;
+}
+
+.new-texts{
+    color:white;
+    font-weight:bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    max-width:290px;
+    margin:0 auto;
+    padding:15px 0;
+    top:40%;
+    left:0;
+    right:0;
+}
+
+.archive-new{
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.magazine-wrapper{
+    margin-block-end:80px;
+}
+
+.fashion-texts{
+    margin:0 auto;
+    text-align:center;
+    max-width:1200px;
+    padding:0 5%;
+    
+    top:0;
+    left:50%;
+}
+
+.fashion-btn{
+    text-decoration:none;
+    color:#2A2A2A;
+    border:solid 1px #2a2a2a;
+    font-size:0.75rem;
+    padding:14px 36px;
+}
+
+.fashion-title{
+    margin-block-end:20px;
+}
+
+.fashion-description{
+    margin-block-end:30px;
+}
+
+
+.fashion{
+    height:520px;
+    padding-block-start:60px;
+    background-image:url(fashion.jpg);
+    background-size:cover;
+}
+
+.catalog{
+    width:1200px;
+    padding:60px 5%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+.catalog img{
+    width:48%;
+}
+
+.catalog-texts{
+    width:48%;
+    text-align:center;
+}
+
+h3{
+    margin-block-end:40px;
+    font-size:1.5rem;
+}
+
+.catalog p{
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.antique{
+    width:1200px;
+    margin:0 auto 60px auto;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.antique-texts{
+    width:48%;
+
+
+}
+
+.antique img{
+    width:48%;
+}
+
+h4{
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:40px;
+}
+
+.antique p{
+    margin-bottom:30px;
+    text-align:left;
+
+}
+
+.antique-texts{
+    text-align:center;
+}
+.antique-texts a{
+    text-decoration:none;
+    color:#2A2A2A;
+    border:solid 1px #2A2A2A;
+    padding:14px 36px;
+  
+    text-align:center;
+}
+
+.footer-container{
+ 
+    background-color:#333;
+}
+
+.footer-wrapper{
+    width:1200px;
+    padding-top:100px;
+    padding-bottom:100px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    color:#fff;
+    
+}
+
+.footer-logo{
+    padding-top:60px;
+    padding-bottom:60px;
+    width:33%;
+}
+
+.footer-logo img{
+    width:120px;
+    height:40px;
+}
+
+.contents1{
+    width:33%;
+    
+}
+
+.contents1-title{
+    font-weight:700;
+    font-size:1.25rem;
+}
+
+.contents2{
+    width:33%;
+}
+
+.contents2-title{
+    font-weight:700;
+    margin-bottom:10px;
+    font-size:1.25rem;
+}
+
+footer p{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align:center;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+
+
+    body{
+        font-size:0.75rem;
+    }
+
+    .logo{
+        position:absolute;
+        top:5%;
+        left:70%;
+        }
+
+    
+    .catalog{
+        width:100%;
+        flex-direction: column;
+    }
+
+    .catalog img{
+        width:90%;
+        margin: 0 auto;
+        padding:30px 0;
+        order:2;
+    }
+
+    .catalog-texts{
+        width:90%;
+        text-align:center;
+        margin:0 auto;
+        order:1;
+    }
+
+    .antique{
+        width:100%;
+        display:block;
+
+    }
+
+    .antique img{
+        width:90%;
+        margin:30px auto 0 auto;
+    }
+
+    .antique-texts{
+        width:90%;
+        text-align:center;
+        margin:0 auto;
+    }
+    
+
+    .antique-texts a{
+        margin-bottom:30px;
+    }
+
+
+    footer{
+        width:100%;
+        text-align:center;
+        
+        
+    }
+
+    .footer-logo{
+       
+    }
+
+    .footer-wrapper{
+        flex-direction:column;
+        text-align:center;
+        margin:0 auto;
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width:601px) and (max-width:960px){
+
+    body{
+        font-size:0.85rem;
+    }
+
+    .logo{
+        position:absolute;
+        top:5%;
+        left:70%;
+        }
+
+
+
+
+
+
+
+}
